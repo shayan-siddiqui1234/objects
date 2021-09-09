@@ -5,11 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+<!-- <style>
+    .cart{
+background-color: purple;
+height: 200px;
+width: 400px;
+    } -->
+<!-- /* .ff{
+    display: flex;
+} */
+// -->
 <body>
     
+<!-- <a href="#" onclick="nameeee('hi friends')">If you find any result so click me</a>
+ -->
+<!-- 
 
-    <script src="app.js"></script>
+    <button onClick="che()">Check Your Result</button> -->
+
+
+    
+<!-- <img src="a.jpg" onmouseover="src='b.jpeg'" onmouseout="src='bc.jpg'" alt=""> -->
+<!-- <input id="dd" onfocus="this.style.backgroundColor = 'red'" onblur="this.style.backgroundColor = 'pink'" type="text" >
+<button onclick="ddd()">Click me </button> -->
+
+<!-- <p>MY Name is muhammad SHayan sidiqui</p>
+<p> I am doing Software engineering</p>
+<p>today i am very happy </p>
+<p> currently i am in 6 semester</p>
+<p> this is all about me </p>
+
+<button onclick="getElemtn()"> GET any thing</button> -->
+<!-- 
+<div class="ff">
+ <img  style="padding: 10px;" id="cric"  width=100px height="40px" src="data:image/jpeg;base64,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" alt="">
+<h6 id="spe">  Special BAT</h6>
+<h6 id="spce">   price = 50000</h6>
+<button id="btn"  onclick="fin()">Add to Cart</button>
+</div>
+
+<div id="cart" class="cart">
+
+<img  id="Ccric">
+<h6 id="Cspe"> </h6> 
+<h6 id="Cspec">   </h6>
+</div>
+</div> -->
+
+<!-- <P class="abc" id="aaa"  lang="english" style="color: purple;"> This the main paragraph</P> -->
+<!-- <div id="z" ></div> -->
+
+
+
+<h1>TODO APP:</h1>
+<div id="message">
+<div >
+    <input type="text" id="val">
+</div>
+<button onclick="btN()">SEND</button>
+</div>
 </body>
+<script src="app.js"></script>
 </html>
